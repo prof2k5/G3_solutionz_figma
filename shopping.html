@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+      .main-container {
+        width: 1440px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .left-right {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        padding: 48px 0;
+      }
+      .left-box {
+        grid-column: span 3;
+      }
+
+      .right-box {
+      }
+      .right-box img {
+        width: 389px;
+        height: 796px;
+        gap: 48px;
+      }
+      .listing {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        gap: 19px;
+        padding-top: 35px;
+        /* padding-right: 60px; */
+      }
+      .listing img {
+        size: 183px 162px;
+      }
+      h3 {
+        color: #252b42;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      #pix32 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .main-nav {
+        width: 444px;
+        height: 50px;
+      }
+      .nav-bar {
+        display: flex;
+        line-height: 1.2rem;
+        /* align-items: center; */
+        justify-content: center;
+        text-align: center;
+      }
+      .main-nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-weight: 700;
+      }
+      .hr1 {
+        width: 95%;
+        text-align: center;
+      }
+      .round {
+      }
+      .most-popular-main {
+        width: 1440px;
+        /* height: 880px; */
+        justify-content: center;
+      }
+      .most-popular {
+        width: 1069px;
+        height: 784px;
+        display: grid;
+        grid-template-columns: 401px 674px;
+        height: 784px;
+        margin: 0 auto;
+      }
+      /* .big-pic {
+        
+      } */
+      #blue {
+        /* color: lightseagreen; */
+        color: #23a6f0;
+      }
+      .product-title {
+        color: #252b42;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 24px;
+      }
+      .product-cat {
+        color: #737373;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 48px;
+      }
+      .prices {
+        display: flex;
+        gap: 5px;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 24px;
+      }
+      .price1 {
+        color: #bdbdbd;
+      }
+      .price2 {
+        color: #23856d;
+      }
+      .details {
+        width: 183px;
+        gap: 10px;
+        padding-top: 25px;
+      }
+      .item {
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .parag {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #737373;
+        width: 280px;
+        height: 60px;
+        margin-bottom: 20px;
+        /* justify-content: center;
+        align-items: center; */
+        margin: 0 auto 20px auto;
+      }
+      h6 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+      }
+      .flex-dp {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .colors {
+        display: flex;
+        gap: 6.08px;
+        justify-content: center;
+        padding-top: 20px;
+      }
+      .blue {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgba(35, 166, 240, 1);
+      }
+      .green {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgba(35, 133, 109, 1);
+      }
+      .violet {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgba(231, 124, 64, 1);
+      }
+      .dark {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgba(37, 43, 66, 1);
+      }
+
+      .left-mp {
+        text-align: center;
+        gap: 30px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: rgba(250, 250, 250, 1);
+        width: 401px;
+        /* height: 784px; */
+      }
+      .left-mp-inner {
+        width: 348px;
+        height: 604px;
+        gap: 19px;
+      }
+      .pad {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .product-listing {
+        display: flex;
+        gap: 30px;
+      }
+      .bs-products-inner {
+        width: 1124px;
+        height: 644px;
+        gap: 24px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        margin: 0 auto;
+      }
+      .new-color {
+        background-color: rgba(250, 250, 250, 1);
+      }
+      .hr-deco {
+        /* width: 1042px; */
+        /* height: 2px; */
+        background-color: rgba(236, 236, 236, 1);
+      }
+
+      /* __RESPONSIVENESS__ */
+            @media (max-width:768px){
+         .main-container {
+        width: 419px;
+      }  
+      .left-right {
+        display: grid;
+        grid-template-columns: 1fr;
+      }   
+      /* .left-box {
+        grid-column: 1fr;
+      } */
+      .listing {
+        grid-template-columns: 1fr;
+      }
+        .main-nav {
+        width: 419px;
+        /* height: 50px; */
+      }
+      .nav-bar {
+        display: block;
+      }
+      .round {
+      }
+      .most-popular-main {
+        width: 419px;
+        /* height: 880px; */
+        justify-content: center;
+      }
+      .prices {
+        display: block;
+      }
+      .product-listing {
+        width: 419px;
+        display: block;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="left-right">
+        <div class="left-box">
+          <div class="nav-bar">
+            <div class="h3"><h3>BEST SELLER PRODUCTS</h3></div>
+            <div class="main-nav">
+              <ul>
+                <li id="blue">Men</li>
+                <li>Women</li>
+                <li>Accessories</li>
+                <li class="round">
+                  <img src="./assets/images/lt_arrow.png" alt="" />
+                </li>
+                <li class="round">
+                  <img src="./assets/images/gt_arrow.png" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <hr class="hr1 hr-deco" />
+          <div class="listing">
+            <div class="item">
+              <div><img src="./assets/images/shop1.png" alt="" /></div>
+              <div class="details">
+                <div class="product-title">Graphic Design</div>
+                <div class="product-cat">English Department</div>
+                <div class="prices">
+                  <div class="price1">$16.48</div>
+                  <div class="price2">$16.48</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div><img src="./assets/images/shop2.png" alt="" /></div>
+              <div class="details">
+                <div class="product-title">Graphic Design</div>
+                <div class="product-cat">English Department</div>
+                <div class="prices">
+                  <div class="price1">$16.48</div>
+                  <div class="price2">$16.48</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div><img src="./assets/images/shop3.png" alt="" /></div>
+              <div class="details">
+                <div class="product-title">Graphic Design</div>
+                <div class="product-cat">English Department</div>
+                <div class="prices">
+                  <div class="price1">$16.48</div>
+                  <div class="price2">$16.48</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div><img src="./assets/images/shop1.png" alt="" /></div>
+              <div class="details">
+                <div class="product-title">Graphic Design</div>
+                <div class="product-cat">English Department</div>
+                <div class="prices">
+                  <div class="price1">$16.48</div>
+                  <div class="price2">$16.48</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div><img src="./assets/images/shop2.png" alt="" /></div>
+              <div class="details">
+                <div class="product-title">Graphic Design</div>
+                <div class="product-cat">English Department</div>
+                <div class="prices">
+                  <div class="price1">$16.48</div>
+                  <div class="price2">$16.48</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div><img src="./assets/images/shop3.png" alt="" /></div>
+              <div class="details">
+                <div class="product-title">Graphic Design</div>
+                <div class="product-cat">English Department</div>
+                <div class="prices">
+                  <div class="price1">$16.48</div>
+                  <div class="price2">$16.48</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-box">
+          <img src="./assets/images/col-md-4.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="most-popular-main">
+      <div class="most-popular">
+        <!-- <div class="mp-left">
+          <img src="./assets/images/right.png" alt="" />
+        </div> -->
+        <div class="left-mp">
+          <div class="left-mp-inner">
+            <div class="h3"><h3 id="pix32">MOST POPULAR</h3></div>
+            <div class="parag">
+              <p>
+                we forcus on economic and meeting you where you work. It's only
+                a keystroke away.
+              </p>
+            </div>
+            <div><img src="./assets/images/caramel.png" alt="" /></div>
+            <div class="product-cat">English Department</div>
+            <div class="flex-dp pad">
+              <div><img src="./assets/images/Frame.png" alt="" /></div>
+              <div><h6>15 sales</h6></div>
+            </div>
+            <div class="prices">
+              <div class="price1">$16.48</div>
+              <div class="price2">$16.48</div>
+            </div>
+            <div class="colors">
+              <div class="blue"></div>
+              <div class="green"></div>
+              <div class="violet"></div>
+              <div class="dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="big-pic">
+          <img src="./assets/images/big-pic.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="main-container">
+      <div class="bs-products-inner">
+        <div class="h3"><h3>BEST SELLER PRODUCTS</h3></div>
+        <br>
+        <hr class="hr-deco">
+        
+        <div class="product-listing new-color">
+          <div class="item">
+            <div><img src="./assets/images/jug.png" alt="" /></div>
+            <div class="details">
+              <div class="product-title">Graphic Design</div>
+              <div class="product-cat">English Department</div>
+              <div class="prices">
+                <div class="price1">$6.48</div>
+                <div class="price2">$6.48</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div><img src="./assets/images/bleach.png" alt="" /></div>
+            <div class="details">
+              <div class="product-title">Graphic Design</div>
+              <div class="product-cat">English Department</div>
+              <div class="prices">
+                <div class="price1">$6.48</div>
+                <div class="price2">$6.48</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div><img src="./assets/images/original.png" alt="" /></div>
+            <div class="details">
+              <div class="product-title">Graphic Design</div>
+              <div class="product-cat">English Department</div>
+              <div class="prices">
+                <div class="price1">$6.48</div>
+                <div class="price2">$6.48</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div><img src="./assets/images/original_2.png" alt="" /></div>
+            <div class="details">
+              <div class="product-title">Graphic Design</div>
+              <div class="product-cat">English Department</div>
+              <div class="prices">
+                <div class="price1">$6.48</div>
+                <div class="price2">$6.48</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
