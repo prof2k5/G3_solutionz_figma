@@ -17,10 +17,12 @@
         font-family: "Montserrat", sans-serif;
       }
       .main-container {
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         margin: 0 auto;
         background-color: rgba(255, 255, 255, 1);
       }
+
       .left-right {
         display: grid;
         grid-template-columns: repeat(4, auto);
@@ -134,6 +136,7 @@
         width: 183px;
         gap: 10px;
         padding-top: 25px;
+        margin: 0 auto;
       }
       .item {
         text-align: center;
@@ -235,44 +238,98 @@
         background-color: rgba(236, 236, 236, 1);
       }
 
-      /* __RESPONSIVENESS__ */
-            @media (max-width:768px){
-         .main-container {
-        width: 419px;
-      }  
-      .left-right {
-        display: grid;
-        grid-template-columns: 1fr;
-      }   
-      /* .left-box {
-        grid-column: 1fr;
-      } */
-      .listing {
-        grid-template-columns: 1fr;
-      }
-        .main-nav {
-        width: 419px;
-        /* height: 50px; */
-      }
-      .nav-bar {
-        display: block;
-      }
-      .round {
-      }
-      .most-popular-main {
-        width: 419px;
-        /* height: 880px; */
-        justify-content: center;
-      }
-      .prices {
-        display: block;
-      }
-      .product-listing {
-        width: 419px;
-        display: block;
+      /* _________RESPONSIVENESS__________ */
+
+      /* =========================
+   RESPONSIVE (TABLET + MOBILE)
+   ========================= */
+
+      @media (max-width: 1024px) {
+        /* Make main containers flexible */
+        .main-container,
+        .most-popular-main,
+        .most-popular,
+        .bs-products-inner {
+          width: 100%;
+        }
+
+        /* Stack left-right section */
+        .left-right {
+          grid-template-columns: 1fr;
+          padding: 30px 20px;
+        }
+
+        .right-box img {
+          width: 100%;
+          height: auto;
+        }
+
+        /* Product grid becomes 2 columns */
+        .listing {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Most popular becomes stacked */
+        .most-popular {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+
+        .left-mp {
+          width: 100%;
+        }
+
+        .big-pic img {
+          width: 100%;
+          height: auto;
+        }
+
+        /* Bottom product listing wraps */
+        .product-listing {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .product-listing .item {
+          width: 45%;
+        }
       }
 
+      /* =========================
+   SMALL MOBILE
+   ========================= */
+
+      @media (max-width: 600px) {
+        /* Make listing single column */
+        .listing {
+          grid-template-columns: 1fr;
+        }
+
+        .product-listing {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .product-listing .item {
+          width: 100%;
+        }
+
+        .main-nav ul {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .nav-bar {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .prices {
+          flex-direction: column;
+        }
       }
+
+      /* __________RESPONSIVENESS ENDS___________ */
     </style>
   </head>
   <body>
@@ -411,9 +468,9 @@
     <section class="main-container">
       <div class="bs-products-inner">
         <div class="h3"><h3>BEST SELLER PRODUCTS</h3></div>
-        <br>
-        <hr class="hr-deco">
-        
+        <br />
+        <hr class="hr-deco" />
+
         <div class="product-listing new-color">
           <div class="item">
             <div><img src="./assets/images/jug.png" alt="" /></div>
