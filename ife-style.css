@@ -1,0 +1,486 @@
+/* *{
+    font-family: "Montserrat";
+} */
+ .ifecontainer {
+    margin-left: 7rem;
+     gap: 30px;
+     font-family: "Montserrat";
+
+ }
+ .ifeleftdiv {
+     width: 389px;
+     height: 796px;
+     gap: 48px;
+     background: url('./assets/images/media bg-cover.png');
+ }
+
+ .ifetext {
+     width: 389px;
+     height: 101px;
+     padding-top: 24px;
+     padding-right: 24px;
+     padding-bottom: 24px;
+     padding-left: 48px;
+     gap: 5px;
+ }
+
+ .ifetext2 {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 2px;
+     letter-spacing: 0.2px;
+ }
+
+ .ifecolor {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 2px;
+     letter-spacing: 0.2px;
+     color: #737373;
+ }
+
+ .iferightdiv {
+     gap: 10px;
+ }
+
+ .ifeheader {
+     display: flex;
+ }
+
+ .ifesub-header1 {
+     gap: 10px;
+
+ }
+
+ .ifediv1 {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.1px;
+     text-align: center;
+ }
+
+ .ifesub-header2 {
+     opacity: 1;
+     display: flex;
+
+
+ }
+
+ .ifediv2 {
+     top: 0.5px;
+     left: 0.5px;
+     display: flex;
+ }
+
+ .ifelist {
+     list-style-type: none;
+     top: 0.5px;
+     left: 0.5px;
+     gap: 25px;
+     display: flex;
+     align-items: center;
+
+ }
+
+ .ifelist2 {
+     top: 1px;
+     left: 330.5px;
+     gap: 15px;
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+ }
+.ifemini-mart{
+padding-top: 20px;
+}
+ .ifeunderstand {
+     color: #ECECEC;
+ }
+
+
+ .iferow1 {
+     gap: 30px;
+     display: flex;
+     align-items: center;
+     padding-top: 20px;
+
+ }
+
+
+ .ifecaption {
+     padding-top: 25px;
+     padding-right: 25px;
+     padding-bottom: 35px;
+     padding-left: 25px;
+     gap: 10px;
+ }
+
+ .ifevip {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.1px;
+     text-align: center;
+     color: #23856D;
+ }
+
+ .ifevip2 {
+     font-weight: 700;
+     font-size: 14px;
+     line-height:1.0;
+     letter-spacing: 0.1px;
+     text-align: center;
+     color: #BDBDBD;
+ }
+
+ .ifevip3 {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.1px;
+     text-align: center;
+     color: #252B42;
+ }
+
+ .ifeproducts2 {
+     width: 183px;
+     height: 324px;
+     opacity: 1;
+
+ }
+
+ .ifeproducts3 {
+     width: 183px;
+     height: 324px;
+     opacity: 1;
+
+ }
+
+ .ifeimg1 {
+     max-width: 183px;
+     width: 100%;
+     height: 145px;
+     opacity: 1;
+
+ }
+
+ .ifeimg2 {
+     /* width: 183px; */
+     max-width: 183px;
+     width: 100%;
+     height: 100px;
+     opacity: 1;
+ }
+
+ .ifeunderline {
+     width: 658px;
+     height: 2px;
+     opacity: 1;
+     color: #ECECEC;
+ }
+
+ .ifeoga {
+     display: flex;
+     padding-top: 48px;
+     padding-bottom: 48px;
+     gap: 30px;
+
+ }
+ 
+ .ifemaster-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin: 10 auto;
+}
+
+.ifesecond-div {
+    background-color: rgb(249, 249, 253);
+    padding: 15px;
+
+}
+
+.ifegeneraz {
+    padding: 13px;
+    font-family: "Montserrat";
+
+}
+
+.ifenum {
+    color: #E74040;
+    font-size: 80px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+
+
+
+}
+
+.ifetextz{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    font-family: "Montserrat";
+    padding-bottom:0px ;
+    padding-top:0px;
+}
+
+.ifep {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2.4;
+    letter-spacing: 0.2px;
+    font-family: "Montserrat";
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.ifemajor-text {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.ifesilentboss {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ife {
+    padding: 12px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+.price{
+     font-family: "Montserrat";
+     color:#BDBDBD;
+}
+.price2{
+    font-family: "Montserrat";
+    color: #23856D;
+}
+.ifebody {
+    background-color: #252B42;
+    font-family: "Montserrat";
+    color: #FFFFFF;
+    align-items: center;
+    margin-top:3rem;
+    vertical-align: auto;
+    margin: 1rem;
+}
+
+.ifeinnerbox {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ifeline1 {
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.1px;
+}
+
+.ifeline2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+}
+
+.ifebutton {
+    padding-top: 15px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: #23A6F0;
+
+}
+
+.ifelistz{
+    list-style-type: none;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+.ifelistz1 {
+    gap: 10px;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.ifelastimg {
+    list-style-type: none;
+    display: flex;
+    width: 112px;
+    height: 24px;
+    opacity: 1;
+    gap: 20px;
+
+}
+
+.ifelastline {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ifelistz2 {
+    list-style-type: none;
+    line-height: 0.8;
+}
+
+.ifeimg3 {
+    width: 22.8px;
+    height: 22.8px;
+    opacity: 1;
+    padding-bottom: 1.19px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.ifelasttext {
+    padding-right: 125px;
+}
+
+/* _____RESPONSIVENESS (By Taiwo)_______ */
+/* ___________FOR MOBILE________  */
+
+@media (max-width: 480px) {
+
+  .ifecontainer {
+    margin-left: 1rem;
+  }
+
+  .ifeoga {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ifeleftdiv {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+
+  .iferow1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ifeimg1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .ifeunderline {
+    width: 100%;
+  }
+
+  .ifemaster-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ifemajor-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ifeinnerbox {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .ifelistz {
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .ifelastline {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ifelasttext {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+/* _____TABLETS_____ */
+
+@media (max-width: 768px) {
+
+  .ifeoga {
+    flex-direction: column;
+  }
+
+  .iferow1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ifeproduct1,
+  .ifeproduct2,
+  .ifeproduct3 {
+    width: 45%;
+  }
+
+  .ifeimg1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .ifemajor-text {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ifelistz {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+/* _____SMALL LAPTOPS____ */
+
+@media (max-width: 1024px) {
+
+  .ifecontainer {
+    margin-left: 2rem;
+  }
+
+  .ifeunderline {
+    width: 100%;
+  }
+
+  .ifelistz {
+    padding-left: 40px;
+  }
+}
+
+
+
