@@ -4,7 +4,7 @@
  .ifecontainer {
     margin-left: 7rem;
      gap: 30px;
-     font-family: "Montserrat";
+     /* font-family: "Montserrat"; */
 
  }
  .ifeleftdiv {
@@ -128,7 +128,7 @@ padding-top: 20px;
  .ifevip2 {
      font-weight: 700;
      font-size: 14px;
-     line-height:1.0;
+     line-height:48px;
      letter-spacing: 0.1px;
      text-align: center;
      color: #BDBDBD;
@@ -146,14 +146,12 @@ padding-top: 20px;
  .ifeproducts2 {
      width: 183px;
      height: 324px;
-     opacity: 1;
 
  }
 
  .ifeproducts3 {
      width: 183px;
      height: 324px;
-     opacity: 1;
 
  }
 
@@ -161,7 +159,6 @@ padding-top: 20px;
      max-width: 183px;
      width: 100%;
      height: 145px;
-     opacity: 1;
 
  }
 
@@ -170,13 +167,11 @@ padding-top: 20px;
      max-width: 183px;
      width: 100%;
      height: 100px;
-     opacity: 1;
  }
 
  .ifeunderline {
      width: 658px;
      height: 2px;
-     opacity: 1;
      color: #ECECEC;
  }
 
@@ -193,7 +188,8 @@ padding-top: 20px;
     flex-direction: row;
     justify-content: center;
     padding-bottom: 30px;
-    margin: 10 auto;
+    /* margin: 10 auto; */
+    margin: 0 auto; 
 }
 
 .ifesecond-div {
@@ -204,14 +200,14 @@ padding-top: 20px;
 
 .ifegeneraz {
     padding: 13px;
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
 
 }
 
 .ifenum {
     color: #E74040;
     font-size: 80px;
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
@@ -227,7 +223,7 @@ padding-top: 20px;
     font-size: 12px;
     line-height: 1.6;
     letter-spacing: 0.2px;
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
     padding-bottom:0px ;
     padding-top:0px;
 }
@@ -238,7 +234,7 @@ padding-top: 20px;
     font-size: 14px;
     line-height: 2.4;
     letter-spacing: 0.2px;
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
     padding-bottom: 0px;
     padding-top: 0px;
 }
@@ -257,20 +253,23 @@ padding-top: 20px;
 
 .ife {
     padding: 12px;
-    font-size: 13px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #737373;
 }
 .price{
-     font-family: "Montserrat";
+     /* font-family: "Montserrat"; */
      color:#BDBDBD;
 }
 .price2{
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
     color: #23856D;
 }
 .ifebody {
     background-color: #252B42;
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
     color: #FFFFFF;
     align-items: center;
     margin-top:3rem;
@@ -368,6 +367,7 @@ padding-top: 20px;
 
   .ifecontainer {
     margin-left: 1rem;
+    margin: 0 auto;
   }
 
   .ifeoga {
